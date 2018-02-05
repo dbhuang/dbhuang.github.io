@@ -7,13 +7,21 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="基于Node.js + GitHub + Hexo搭建属于自己博客准备环境(本开发基于window系统) 安装node.js（下载地址） 安装git（下载地址）  打开cmd命令行 Microsoft Windows [版本 6.1.7601] 版权所有 (c) 2009 Microsoft Corporation。保留所有权利。  C:\Users\Administrator&amp;gt;node -">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta property="og:url" content="http://yoursite.com/2018/02/05/Node_Github_Hexo/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="基于Node.js + GitHub + Hexo搭建属于自己博客准备环境(本开发基于window系统) 安装node.js（下载地址） 安装git（下载地址）  打开cmd命令行 Microsoft Windows [版本 6.1.7601] 版权所有 (c) 2009 Microsoft Corporation。保留所有权利。  C:\Users\Administrator&amp;gt;node -">
 <meta property="og:locale" content="zh">
+<meta property="og:image" content="https://i.imgur.com/NzmUiZR.png">
+<meta property="og:image" content="https://i.imgur.com/NahjbHr.png">
+<meta property="og:image" content="https://i.imgur.com/FQPOojM.png">
+<meta property="og:updated_time" content="2018-02-05T15:18:58.921Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="基于Node.js + GitHub + Hexo搭建属于自己博客准备环境(本开发基于window系统) 安装node.js（下载地址） 安装git（下载地址）  打开cmd命令行 Microsoft Windows [版本 6.1.7601] 版权所有 (c) 2009 Microsoft Corporation。保留所有权利。  C:\Users\Administrator&amp;gt;node -">
+<meta name="twitter:image" content="https://i.imgur.com/NzmUiZR.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -60,9 +68,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-Node_Github_Hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-Node_Github_Hexo" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2018/02/05/Node_Github_Hexo/" class="article-date">
   <time datetime="2018-02-05T15:18:58.820Z" itemprop="datePublished">2018-02-05</time>
@@ -266,109 +272,19 @@ added 31 packages in 35.665s
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-gitCommands" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2018/02/05/gitCommands/" class="article-date">
-  <time datetime="2018-02-05T13:13:18.935Z" itemprop="datePublished">2018-02-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="git常用命令"><a href="#git常用命令" class="headerlink" title="git常用命令"></a>git常用命令</h1><h3 id="创建仓库"><a href="#创建仓库" class="headerlink" title="创建仓库"></a>创建仓库</h3><pre><code>$ mkdir learnGit  创建目录
-$ cd learnGit      进入目录
-$ pwd              显示当前目录路径
-$ git init          初始化仓库
-$ ls -ah          查看.git隐藏文件生成情况
-</code></pre><h3 id="工作区添加文件并提交到版本库"><a href="#工作区添加文件并提交到版本库" class="headerlink" title="工作区添加文件并提交到版本库"></a>工作区添加文件并提交到版本库</h3><pre><code>$ pwd                                    显示当前目录路径必须是创建版本库的同目录
-$ git status                            版本库的当前变化状态（无）
-$ echo &apos;version1 text content&apos; &gt; v1.md  文件里面写入内容（文件没则新建有则覆盖）
-$ ll                                    查看文件生成情况
-$ cat v1.md                                查看文件内容
-$ git status                            版本库的当前变化状态（新增了文件）
-$ git add v1.md                            从工作区添加到缓存区
-$ git status                            版本库的当前变化状态（文件已加入缓存区待提交到版本库）
-$ git commit -m &apos;submit v1&apos;                从缓存区添加到版本库
-</code></pre><h3 id="内容变更"><a href="#内容变更" class="headerlink" title="内容变更"></a>内容变更</h3><pre><code>$ echo &apos;version2 text content&apos; &gt;&gt; v1.md        向v1.md文件追加内容
-$ cat v1.md                                    查看追加的内容
-$ git diff v1.md                            查看与缓存区之间的变更差异
-$ git status                                版本库的当前当前变化状态（工作区文件被修改）
-$ git add v1.md                                从工作区添加到缓存区
-$ git commit -m &apos;submit v2&apos;                    从缓存区添加到版本库
-</code></pre><h3 id="缓存区恢复及工作区恢复"><a href="#缓存区恢复及工作区恢复" class="headerlink" title="缓存区恢复及工作区恢复"></a>缓存区恢复及工作区恢复</h3><pre><code>$ echo &apos;version3 text content&apos; &gt;&gt; v1.md        向v1.md文件追加内容
-$ cat v1.md                                    查看追加的内容
-$ git add v1.md                                从工作区添加到缓存区
-$ git reset HEAD v1.md                        撤销对缓存区的修改
-$ git checkout -- v1.md                        撤销对工作区的追加（没有--变成了切换分支）
-</code></pre><h3 id="切换版本"><a href="#切换版本" class="headerlink" title="切换版本"></a>切换版本</h3><pre><code>$ echo &apos;version3 text content&apos; &gt;&gt; v1.md        向v1.md文件追加内容（增加测试数据）
-$ git add v1.md                                从工作区添加到缓存区（增加测试数据）
-$ git commit -m &apos;submit v3&apos;                    从缓存区添加到版本库（增加测试数据）
-$ git log                                    查看提交的记录
-$ git log --pretty=oneline                    查看提交的简要记录
-$ git reflog                                查看版本提交及回退记录
-$ git reset --hard HEAD^                    v3回退一个版本v2（一个^代表回退一个版本）
-$ git reset --hard *******                    v2回退到某个指定版本v3（******是commit id，git reflog或git log获取hash的前七位）
-$ git reset --hard HEAD~2                    v3回退到前两个版本v1（上一操作是回退到最新的版本）
-</code></pre><h3 id="分支添加、切换、临时藏匿修改内容再建分支解决问题、合并、冲突解决"><a href="#分支添加、切换、临时藏匿修改内容再建分支解决问题、合并、冲突解决" class="headerlink" title="分支添加、切换、临时藏匿修改内容再建分支解决问题、合并、冲突解决"></a>分支添加、切换、临时藏匿修改内容再建分支解决问题、合并、冲突解决</h3><pre><code>$ git checkout -b dev1    创建分支dev1并且切换到当前新创建的分支dev1下
-$ git branch            查看当前工作区指向到分支的情况（指向到dev1）
-$ git branch dev0        创建分支dev0
-$ git checkout dev0        切换到dev0分支下
-$ git branch            查看当前工作区指向到分支的情况（指向到dev0）
-$ git checkout master    切换到主分支（指向到默认的master分支）
-$ git branch -d dev0    删除分支dev0（当前分支指向的不是dev0才能删除）
-$ git checkout dev1        切换到dev1分支下（开始dev1的开发任务）
-$ echo &apos;version3.1 text content from branch dev1&apos; &gt;&gt; v1.md        分支追加新的内容    
-$ git stash             藏匿新追加的内容（如果不藏匿你要新增分支会把当前的变更内容也被指向）
-$ git checkout -b dev2    创建分支dev2（突然要建个分支修bug，如果没有git stash是刚刚的追加会被指向过来且会在创建分支时候提醒你）
-$ cat v1.md                查看追加的内容（此时发现刚刚在dev1追加的内容已经不见）
-$ echo &apos;version3.1.1 text content from branch dev2&apos; &gt;&gt; v1.md    分支追加新的内容
-$ git add v1.md            从工作区添加到缓存区
-$ git commit -m &apos;submit v3.1.1 bug dev2&apos; 从缓存区添加到分支dev2
-$ git checkout master    切换到主分支（指向到默认的master分支）
-$ cat v1.md                查看追加的内容（虽然刚刚dev2提交了内容，但此时发现刚刚在dev2追加的内容已经不见）
-$ git merge --no-ff -m &quot;merge dev2&quot; dev2        把分支dev2的修改合并到主分支master上（当前所在分支是master,--no-ff参数就可以用普通模式合并）
-$ git branch -d dev2    删除分支dev2（bug解决完了就把它给删除然后回到dev1继续任务）
-$ git checkout dev1        切换到dev1分支下
-$ cat v1.md                查看内容（发现刚刚dev2的修改没有在这里看到）
-$ git stash list        查看藏匿内容列表
-$ git stash apply        恢复之前藏匿的内容
-$ git stash drop        删除藏匿内容列表
-$ git stash             藏匿变化的内容
-$ git stash list        查看藏匿内容列表
-$ git stash apply stash@{0}        恢复之前藏匿的内容且指定stash
-$ git stash drop        删除藏匿内容列表
-$ git stash             藏匿变化的内容
-$ git stash pop            恢复藏匿的内容且删除藏匿内容列表
-$ git add v1.md            从工作区添加到缓存区
-$ git commit -m &apos;submit v3.1 after v3.1.1 bug&apos; 从缓存区添加到dev1分支
-$ git checkout master    切换到主分支（指向到默认的master分支）
-$ git merge --no-ff -m &quot;merge dev1&quot; dev1        把分支dev1的修改合并到主分支master上（3.1.1和3.1的改动在此时出现冲突）
-$ 打开文件把冲突的内容调整成你需要的
-$ git add v1.md            从工作区添加到缓存区
-$ git commit -m &apos;submit dev2 and dev1 modified conflict&apos; 从缓存区添加到master分支
-$ git log --graph --pretty=oneline --abbrev-commit          查看分支历史
-</code></pre>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2018/02/05/gitCommands/" data-id="cjda8n7p40000kkr83s9ze4s5" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
+  
+    <a href="/2018/02/05/gitCommands/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
+
   
 </article>
-
-
-  
-
 
 </section>
         

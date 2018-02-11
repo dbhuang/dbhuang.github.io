@@ -27,7 +27,7 @@
     <!--Title-->
 
 
-<title>windows下安装PHPStudy2018和memcached服务已经添加PHP7.2.10 NTS对应的memcache.dll和Redis.dll扩展 | dbhuang blogs</title>
+<title>Category: git | dbhuang blogs</title>
 
 
     <link rel="alternate" href="/atom.xml" title="dbhuang blogs" type="application/atom+xml">
@@ -112,115 +112,42 @@
     <section class="content-wrap">
         <div class="container">
             <div class="row">
-                <main class="col-md-8 main-content m-post">
-                    <p id="process"></p>
-<article class="post">
-    <div class="post-head">
-        <h1 id="windows下安装PHPStudy2018和memcached服务已经添加PHP7.2.10 NTS对应的memcache.dll和Redis.dll扩展">
-            
-	            windows下安装PHPStudy2018和memcached服务已经添加PHP7.2.10 NTS对应的memcache.dll和Redis.dll扩展
-            
-        </h1>
-        <div class="post-meta">
+                <main class="col-md-8 main-content ">
+                    <h3> 
     
+        git 
     
-    <span class="categories-meta fa-wrap">
-        <i class="fa fa-folder-open-o"></i>
-        <a href="/categories/php">
-            php
-        </a>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-tags"></i>
-        <span class="tags-meta">
-            
-            <a href="/tags/memcache">
-               memcache
-            </a>
-            
-        </span>
-    </span>
-    
-    
-    <span class="fa-wrap">
-        <i class="fa fa-clock-o"></i>
-        <span class="date-meta">2018/02/09</span>
-    </span>
-</div>
+</h3>
 
-            
-            
-    </div>
-    
-    <div class="post-body post-content">
-        <h2 id="1、下载安装PHPStudy-2018-下载地址-，下载完安装到D-phpstudy"><a href="#1、下载安装PHPStudy-2018-下载地址-，下载完安装到D-phpstudy" class="headerlink" title="1、下载安装PHPStudy 2018(下载地址)，下载完安装到D:/phpstudy"></a>1、下载安装PHPStudy 2018(<a href="http://www.phpstudy.net/" target="_blank" rel="noopener">下载地址</a>)，下载完安装到D:/phpstudy</h2><p><img src="https://i.imgur.com/BHxNu4C.png" alt=""></p>
-<h2 id="2、安装memcached软件服务"><a href="#2、安装memcached软件服务" class="headerlink" title="2、安装memcached软件服务"></a>2、安装memcached软件服务</h2><blockquote>
-<p>下载memcached.exe</p>
-</blockquote>
-<p>32bit：<a href="http://s3.amazonaws.com/downloads.northscale.com/memcached-win32-1.4.4-14.zip" target="_blank" rel="noopener">memcached-win32-1.4.4-14.zip</a>（单击直接下载）</p>
-<p>64bit：<a href="http://s3.amazonaws.com/downloads.northscale.com/memcached-win64-1.4.4-14.zip" target="_blank" rel="noopener">memcached-win64-1.4.4-14.zip</a>（单击直接下载）</p>
-<p>上面的下载地址来源亚马逊的XML<a href="http://s3.amazonaws.com/downloads.northscale.com/" target="_blank" rel="noopener">s3.amazonaws.com/downloads.northscale.com/</a></p>
-<blockquote>
-<p>把下载好的压缩包解压到D:/memcached目录下然后安装</p>
-</blockquote>
-<pre><code>Microsoft Windows [版本 6.1.7601]
-版权所有 (c) 2009 Microsoft Corporation。保留所有权利。
-C:\Windows\system32&gt;d:
-D:\&gt;cd memcached
-D:\memcached&gt;memcached.exe -d install
-D:\memcached&gt;memcached.exe -d start
-D:\memcached&gt;netstat -aon | find &quot;11211&quot;
-  TCP    0.0.0.0:11211          0.0.0.0:0              LISTENING       6340
-  TCP    [::]:11211             [::]:0                 LISTENING       6340
-  UDP    0.0.0.0:11211          *:*                                    6340
-  UDP    [::]:11211             *:*                                    6340
-D:\memcached&gt;
-</code></pre><p><img src="https://i.imgur.com/fthQj3Y.png" alt=""><br><img src="https://i.imgur.com/Hfk8Ghn.png" alt=""></p>
-<blockquote>
-<p>添加一个虚拟空间然后里面放一个内容有&lt;?php phpinfo()?&gt;的index.php，记得注意里面编译器的版本是x86,已经PHP的扩展是NTS和VC15因为这个决定后面要下载的扩展的版本</p>
-</blockquote>
-<p><img src="https://i.imgur.com/A2d9d8T.png" alt=""><br><img src="https://i.imgur.com/kFiekbo.png" alt=""><br><img src="https://i.imgur.com/7VyCYWw.png" alt=""></p>
-<blockquote>
-<p>下载memchche扩展和redis扩展</p>
-</blockquote>
-<p>本来想到是去php官方的扩展库下载(<a href="http://pecl.php.net/package-stats.php" target="_blank" rel="noopener">pecl.php.net/package-stats.php</a>和<a href="http://windows.php.net/downloads/pecl/releases/" target="_blank" rel="noopener">windows.php.net/downloads/pecl/releases/</a>)，但是里面memcache扩展的版本太低最后搜受到GitHub上面有php7的扩展（<a href="https://github.com/nono303/PHP7-memcache-dll" target="_blank" rel="noopener">github.com/nono303/PHP7-memcache-dll</a>），下载时务必注意你php时<code>x86</code>且是<code>7.2</code>且是<code>NTS</code>（非线程）,下载完后把<code>memcache.dll</code>和<code>redis.dll</code>文件放到<code>D:/phpstudy/PHPTutorial/php/php-7.2.1-nts/ext</code>下（刚刚phpstudy安装决定存放位置）,然后打开<code>D:/phpstudy/PHPTutorial/php/php-7.2.1-nts</code>的<code>php.ini</code>把扩展引入加上<code>extension=php-7.2.x_memcache.dll extension=php_redis.dll</code>，最后重启服务。<br><img src="https://i.imgur.com/rBDscsd.png" alt=""><br><img src="https://i.imgur.com/5jEUzxj.png" alt=""><br><img src="https://i.imgur.com/VWKcJii.png" alt=""><br><img src="https://i.imgur.com/24ST5is.png" alt=""><br><img src="https://i.imgur.com/OnFHc7N.png" alt=""><br><img src="https://i.imgur.com/wnhELMu.png" alt=""><br><img src="https://i.imgur.com/dZu1paY.png" alt=""></p>
-
-    </div>
-
-    <div class="post-footer">   
-        <div>
-            
-                转载声明：商业转载请联系作者获得授权,非商业转载请注明出处 © <a href="" target="_blank">dbhuang</a>
-            
-        </div>
-        <div>
-            
-        </div>  
-    </div>
-</article>
-
-<div class="article-nav prev-next-wrap clearfix">
-    
-        <a href="/2018/02/10/php/session_cookie/" class="pre-post btn btn-default"><i class="fa fa-angle-left fa-fw"></i>上一篇</a>
-    
-    
-        <a href="/2018/02/05/Node_Github_Hexo/" class="next-post btn btn-default">下一篇<i class="fa fa-angle-right fa-fw"></i></a>
-    
-</div>
-
-
-    <div id="comments">
+    <article class="post">
         
-	<!--PC和WAP自适应版-->
-<div id="SOHUCS"></div>
-<script type="text/javascript">
-	(function(){var appid='cyt8KmUC1';var conf='prod_855a68d3b3d91855360a6215672a505a';var width=window.innerWidth||document.documentElement.clientWidth;if(width<960){window.document.write('<script id="changyan_mobile_js" charset="utf-8" type="text/javascript" src="https://changyan.sohu.com/upload/mobile/wap-js/changyan_mobile.js?client_id='+appid+'&conf='+conf+'"><\/script>');}else{var loadJs=function(d,a){var c=document.getElementsByTagName("head")[0]||document.head||document.documentElement;var b=document.createElement("script");b.setAttribute("type","text/javascript");b.setAttribute("charset","UTF-8");b.setAttribute("src",d);if(typeof a==="function"){if(window.attachEvent){b.onreadystatechange=function(){var e=b.readyState;if(e==="loaded"||e==="complete"){b.onreadystatechange=null;a()}}}else{b.onload=a}}
-	c.appendChild(b)};loadJs("https://changyan.sohu.com/upload/changyan.js",function(){window.changyan.api.config({appid:appid,conf:conf})});}})();
-</script>	
+        <div class="post-content">
+            <div class="post-head home-post-head">
+                <h1 class="post-title"> 
+                    <a href="/2018/02/05/gitCommands/">git常用命令</a>
+                </h1>
+                <div class="post-meta">  &bull;
+                    <time class="post-date" datetime="" title="">
+                        2018年02月05日
+                    </time>
+                </div>
+            </div>
+            <p class="brief">
+                
+                    git常用命令创建仓库$ mkdir learnGit  创建目录
+$ cd learnGit      进入目录
+$ pwd              显示当前目录路径
+$ git init          初始化仓库
+$ ls ...
+                
+            </p> 
+        </div>
+    </article>
+ 
 
-    </div>
+
+
+
 
 
 

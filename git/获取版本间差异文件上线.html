@@ -1,0 +1,654 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>获取版本间差异文件上线 · DBhuang的技术日志</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="dbhuang">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="百兆大文件提交.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于DBhuang的技术日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="工作区与本地仓库.html">
+            
+                <a href="工作区与本地仓库.html">
+            
+                    
+                    工作区与本地仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="本地仓库到远程仓库.html">
+            
+                <a href="本地仓库到远程仓库.html">
+            
+                    
+                    本地仓库到远程仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="本地分支和远程分支.html">
+            
+                <a href="本地分支和远程分支.html">
+            
+                    
+                    本地分支和远程分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="gitflow工作流.html">
+            
+                <a href="gitflow工作流.html">
+            
+                    
+                    gitflow工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="百兆大文件提交.html">
+            
+                <a href="百兆大文件提交.html">
+            
+                    
+                    百兆大文件提交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.6" data-path="获取版本间差异文件上线.html">
+            
+                <a href="获取版本间差异文件上线.html">
+            
+                    
+                    获取版本间差异文件上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    gitbook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gitbook/搭建和使用.html">
+            
+                <a href="../gitbook/搭建和使用.html">
+            
+                    
+                    搭建和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    kafka
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../kafka/调整副本.html">
+            
+                <a href="../kafka/调整副本.html">
+            
+                    
+                    调整副本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../kafka/数据清理.html">
+            
+                <a href="../kafka/数据清理.html">
+            
+                    
+                    数据清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../kafka/PHP生产者和消费者.html">
+            
+                <a href="../kafka/PHP生产者和消费者.html">
+            
+                    
+                    PHP生产者和消费者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../kafka/其他.html">
+            
+                <a href="../kafka/其他.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    php
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/tars.html">
+            
+                <a href="../php/tars.html">
+            
+                    
+                    tars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/curl的ca证书.html">
+            
+                <a href="../php/curl的ca证书.html">
+            
+                    
+                    curl的ca证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    software
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../software/phpstorm配置docker.html">
+            
+                <a href="../software/phpstorm配置docker.html">
+            
+                    
+                    phpstorm配置docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../software/fiddler对应用抓包.html">
+            
+                <a href="../software/fiddler对应用抓包.html">
+            
+                    
+                    fiddler对应用抓包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../software/远程开机远程控制.html">
+            
+                <a href="../software/远程开机远程控制.html">
+            
+                    
+                    远程开机远程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../software/macmini换硬盘装系统.html">
+            
+                <a href="../software/macmini换硬盘装系统.html">
+            
+                    
+                    macmini换硬盘装系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >获取版本间差异文件上线</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h5 id="&#x5F00;&#x53D1;&#x73AF;&#x5883;-&#x5185;&#x7F51;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;-&#x5916;&#x7F51;uat&#x73AF;&#x5883;-&#x6B63;&#x5F0F;&#x73AF;&#x5883;"><a name="&#x5F00;&#x53D1;&#x73AF;&#x5883;-&#x5185;&#x7F51;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;-&#x5916;&#x7F51;uat&#x73AF;&#x5883;-&#x6B63;&#x5F0F;&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#&#x5F00;&#x53D1;&#x73AF;&#x5883;-&#x5185;&#x7F51;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;-&#x5916;&#x7F51;uat&#x73AF;&#x5883;-&#x6B63;&#x5F0F;&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x5F00;&#x53D1;&#x73AF;&#x5883;-&gt;&#x5185;&#x7F51;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;-&gt;&#x5916;&#x7F51;UAT&#x73AF;&#x5883;-&gt;&#x6B63;&#x5F0F;&#x73AF;&#x5883;</h5>
+<p>0&#x3001;&#x8FDB;&#x5165;&#x5230;&#x9879;&#x76EE;&#x76EE;&#x5F55;</p>
+<pre class="language-"><code>[root@localhost /]# cd /data/xiaochengxu/
+[root@localhost xiaochengxu]# pwd
+/data/xiaochengxu
+</code></pre><p>1&#x3001;&#x83B7;&#x53D6;&#x4FEE;&#x6539;&#x8BB0;&#x5F55;&#x65E5;&#x5FD7;</p>
+<pre class="language-"><code>[root@localhost xiaochengxu]# git log --pretty=oneline
+6cd45627660ac8a271e1fecfafbf9792c766d97c &#x628A;2.5.36bat&#x7248;&#x66F4;&#x65B0;&#x4E3A;2.5.36&#x53D1;&#x5E03;&#x7248;
+00a6499b3c8efafcb8388f7a0a6e7991d7a5b9a2 &#x5C0F;&#x7A0B;&#x5E8F;&#x914D;&#x7F6E;&#x4FEE;&#x6539;&#xFF0C;&#x8BE6;&#x60C5;&#x63A5;&#x53E3;&#x6309;&#x9700;&#x4FEE;&#x6539;
+7155cb7f42677a124b5aafd7497d7c19ae42646e &apos;&#x9996;&#x9875;&#x767B;&#x5F55;&#x83B7;&#x53D6;token&apos;
+ae4dec4a8be04fea456b564f93f64bf9b24ef5f0 &apos;&#x5F15;&#x5165;jwt&#x63D2;&#x4EF6;&apos;
+59277c5e8b3890c7ac98ca06b6bf32239251dc3c &apos;&#x628A;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x7F16;&#x7A0B;&#x81EA;&#x52A8;&#x9002;&#x5E94;&#x7EBF;&#x4E0A;&#x7EBF;&#x4E0B;&#x6A21;&#x5F0F;&apos;
+3b011131e76552974fcc6c82e4ff3c5566354d09 &#x66F4;&#x6539;&#x5C0F;&#x7A0B;&#x5E8F;&#x914D;&#x7F6E;&#x548C;&#x7AD9;&#x70B9;&#x914D;&#x7F6E;&#x5E76;&#x751F;&#x6210;1.1.0sql&#x548C;&#x914D;&#x7F6E;&#x6240;&#x9700;&#x8BC1;&#x4E66;
+f381ce5d31280cc0360952fa1e3426a04bcf1b3d &apos;&#x8C03;&#x7528;install&#x751F;&#x6210;&#x5185;&#x5BB9;&apos;
+9291edc896d71a5905894efc8a33aeb255e616e6 &#x52A0;&#x5165;2.5.36&#x66F4;&#x66FF;&#x7684;&#x5185;&#x5BB9;
+ec79ea3a23eabb9d5f9d7243cc0c8a69bca05c7f &apos;&#x521D;&#x59CB;&#x5316;&apos;
+</code></pre><p>2&#x3001;&#x6BD4;&#x8F83;&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x6587;&#x4EF6;</p>
+<pre class="language-"><code>[root@localhost xiaochengxu]# sudo git diff 6cd456 7155cb --name-only 
+application/admin/controller/order/StoreOrder.php
+application/admin/controller/ump/StoreBargain.php
+application/routine/controller/AuthApi.php
+application/routine/model/store/StoreBargainUser.php
+application/wechat/controller/Home.php
+application/wechat/model/store/StoreBargainUser.php
+update_log.txt
+vendor/overtrue/wechat/src/Core/Http.php
+view/crmebN/app.js
+view/crmebN/pages/cut-list/cut-list.js
+view/crmebN/pages/cut-one/cut-one.wxml
+view/crmebN/pages/index/index.wxss
+view/crmebN/pages/loading/loading.js
+view/crmebN/pages/loading/loading.json
+view/crmebN/pages/loading/loading.wxml
+view/crmebN/pages/loading/loading.wxss
+view/crmebN/pages/product-con/index.wxss
+view/crmebN/pages/user/user.js
+view/crmebN/project.config.json
+view/crmebN/wxParse/wxParse.wxss
+</code></pre><p>3&#x3001;&#x628A;&#x8FD9;&#x4E9B;&#x6587;&#x4EF6;&#x6253;&#x5305;&#x5230;&#x4E00;&#x4E2A;&#x538B;&#x7F29;&#x5305;</p>
+<pre class="language-"><code>[root@localhost xiaochengxu]# sudo git diff 6cd456 7155cb --name-only | xargs tar -czvf ../update-20190322.tar.gz
+application/admin/controller/order/StoreOrder.php
+application/admin/controller/ump/StoreBargain.php
+application/routine/controller/AuthApi.php
+application/routine/model/store/StoreBargainUser.php
+application/wechat/controller/Home.php
+application/wechat/model/store/StoreBargainUser.php
+update_log.txt
+vendor/overtrue/wechat/src/Core/Http.php
+view/crmebN/app.js
+view/crmebN/pages/cut-list/cut-list.js
+view/crmebN/pages/cut-one/cut-one.wxml
+view/crmebN/pages/index/index.wxss
+view/crmebN/pages/loading/loading.js
+view/crmebN/pages/loading/loading.json
+view/crmebN/pages/loading/loading.wxml
+view/crmebN/pages/loading/loading.wxss
+view/crmebN/pages/product-con/index.wxss
+view/crmebN/pages/user/user.js
+view/crmebN/project.config.json
+view/crmebN/wxParse/wxParse.wxss
+</code></pre><p>4&#x3001;&#x5728;&#x6D4B;&#x8BD5;&#x73AF;&#x5883;&#x628A;&#x538B;&#x7F29;&#x5305;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;(&#x63D0;&#x793A;&#x4E2D;&#x9700;&#x8981;&#x8F93;&#x5165;&#x5BC6;&#x7801;)</p>
+<pre class="language-"><code>[root@localhost xiaochengxu]# scp /data/update-20190322.tar.gz root@192.168.1.111:/data/update_gz
+The authenticity of host &apos;192.168.1.111 (192.168.1.111)&apos; can&apos;t be established.
+ECDSA key fingerprint is SHA256:6O2nNs2xZ8UZndt7Av+zo/bX91kW23ELg+m9zZdX/kg.
+ECDSA key fingerprint is MD5:df:e2:82:a9:82:32:90:29:9a:f7:d0:c6:23:96:ad:c3.
+Are you sure you want to continue connecting (yes/no)? yes
+root@192.168.1.111&apos;s password: 
+update-20190322.tar.gz                                                                                             100%  139KB   4.0MB/s   00:00
+</code></pre><p>5&#x3001;&#x767B;&#x5F55;UAT&#x670D;&#x52A1;&#x5668;&#x5E76;&#x89E3;&#x538B;&#x8986;&#x76D6;&#xFF08;&#x6B64;&#x5904;tar -m&#x5FFD;&#x7565;&#x65F6;&#x95F4;&#x5DEE;&#xFF09;</p>
+<pre class="language-"><code>[root@hello update_gz]# tar -zxvmf /data/update_gz/update-20190322.tar.gz -C /data/a.com
+application/admin/controller/order/StoreOrder.php
+application/admin/controller/ump/StoreBargain.php
+application/routine/controller/AuthApi.php
+application/routine/model/store/StoreBargainUser.php
+application/wechat/controller/Home.php
+application/wechat/model/store/StoreBargainUser.php
+update_log.txt
+vendor/overtrue/wechat/src/Core/Http.php
+view/crmebN/app.js
+view/crmebN/pages/cut-list/cut-list.js
+view/crmebN/pages/cut-one/cut-one.wxml
+view/crmebN/pages/index/index.wxss
+view/crmebN/pages/loading/loading.js
+view/crmebN/pages/loading/loading.json
+view/crmebN/pages/loading/loading.wxml
+view/crmebN/pages/loading/loading.wxss
+view/crmebN/pages/product-con/index.wxss
+view/crmebN/pages/user/user.js
+view/crmebN/project.config.json
+view/crmebN/wxParse/wxParse.wxss
+</code></pre><p>6&#x3001;&#x4ECE;UAT&#x670D;&#x52A1;&#x5668;&#x73AF;&#x5883;SYNC&#x8986;&#x76D6;&#x6B63;&#x5F0F;&#x670D;&#x52A1;&#x5668;&#xFF0C;sync &#x81EA;&#x52A8;&#x540C;&#x6B65;&#x811A;&#x672C;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="百兆大文件提交.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 百兆大文件提交">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"获取版本间差异文件上线","level":"1.2.6","depth":2,"next":{"title":"gitbook","level":"1.3","depth":1,"ref":"","articles":[{"title":"搭建和使用","level":"1.3.1","depth":2,"path":"gitbook/搭建和使用.md","ref":"gitbook/搭建和使用.md","articles":[]}]},"previous":{"title":"百兆大文件提交","level":"1.2.5","depth":2,"path":"git/百兆大文件提交.md","ref":"git/百兆大文件提交.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-default-theme","search-pro","splitter","expandable-chapters","hide-element","-highlight","prism","prism-themes","code","ancre-navigation","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-darcula.css"]},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"prism-themes":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dbhuang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DBhuang的技术日志","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"一点点的积累"},"file":{"path":"git/获取版本间差异文件上线.md","mtime":"2022-04-30T11:58:59.602Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-30T13:59:30.513Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

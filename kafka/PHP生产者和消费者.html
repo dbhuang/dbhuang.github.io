@@ -1,0 +1,685 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>PHP生产者和消费者 · DBhuang的技术日志</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="dbhuang">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-ancre-navigation/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="其他.html" />
+    
+    
+    <link rel="prev" href="数据清理.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于DBhuang的技术日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    git
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../git/工作区与本地仓库.html">
+            
+                <a href="../git/工作区与本地仓库.html">
+            
+                    
+                    工作区与本地仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../git/本地仓库到远程仓库.html">
+            
+                <a href="../git/本地仓库到远程仓库.html">
+            
+                    
+                    本地仓库到远程仓库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../git/本地分支和远程分支.html">
+            
+                <a href="../git/本地分支和远程分支.html">
+            
+                    
+                    本地分支和远程分支
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../git/gitflow工作流.html">
+            
+                <a href="../git/gitflow工作流.html">
+            
+                    
+                    gitflow工作流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../git/百兆大文件提交.html">
+            
+                <a href="../git/百兆大文件提交.html">
+            
+                    
+                    百兆大文件提交
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../git/获取版本间差异文件上线.html">
+            
+                <a href="../git/获取版本间差异文件上线.html">
+            
+                    
+                    获取版本间差异文件上线
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    gitbook
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../gitbook/搭建和使用.html">
+            
+                <a href="../gitbook/搭建和使用.html">
+            
+                    
+                    搭建和使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    kafka
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="调整副本.html">
+            
+                <a href="调整副本.html">
+            
+                    
+                    调整副本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="数据清理.html">
+            
+                <a href="数据清理.html">
+            
+                    
+                    数据清理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.4.3" data-path="PHP生产者和消费者.html">
+            
+                <a href="PHP生产者和消费者.html">
+            
+                    
+                    PHP生产者和消费者
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="其他.html">
+            
+                <a href="其他.html">
+            
+                    
+                    其他
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    php
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../php/tars.html">
+            
+                <a href="../php/tars.html">
+            
+                    
+                    tars
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../php/curl的ca证书.html">
+            
+                <a href="../php/curl的ca证书.html">
+            
+                    
+                    curl的ca证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    software
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../software/phpstorm配置docker.html">
+            
+                <a href="../software/phpstorm配置docker.html">
+            
+                    
+                    phpstorm配置docker
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../software/fiddler对应用抓包.html">
+            
+                <a href="../software/fiddler对应用抓包.html">
+            
+                    
+                    fiddler对应用抓包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../software/远程开机远程控制.html">
+            
+                <a href="../software/远程开机远程控制.html">
+            
+                    
+                    远程开机远程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../software/macmini换硬盘装系统.html">
+            
+                <a href="../software/macmini换硬盘装系统.html">
+            
+                    
+                    macmini换硬盘装系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >PHP生产者和消费者</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-anchor"></i><ul><li><span class="title-icon "></span><a href="#php&#x6D88;&#x8D39;&#x8005;"><b></b>PHP&#x6D88;&#x8D39;&#x8005;</a></li><ul><li><span class="title-icon "></span><a href="#&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;"><b></b>&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;</a></li></ul><li><span class="title-icon "></span><a href="#php&#x751F;&#x4EA7;&#x8005;"><b></b>PHP&#x751F;&#x4EA7;&#x8005;</a></li><ul><li><span class="title-icon "></span><a href="#rdkafke"><b></b>rdkafke</a></li><li><span class="title-icon "></span><a href="#nmredkafka-php"><b></b>nmred/kafka-php</a></li></ul></ul></div><a href="#php&#x6D88;&#x8D39;&#x8005;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="php&#x6D88;&#x8D39;&#x8005;"><a name="php&#x6D88;&#x8D39;&#x8005;" class="anchor-navigation-ex-anchor" href="#php&#x6D88;&#x8D39;&#x8005;"><i class="fa fa-link" aria-hidden="true"></i></a>PHP&#x6D88;&#x8D39;&#x8005;</h1>
+<h2 id="&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;"><a name="&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;" class="anchor-navigation-ex-anchor" href="#&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x9AD8;&#x7EA7;&#x6D88;&#x8D39;&#x8005;</h2>
+<pre class="language-"><code class="lang-php"><span class="token variable">$kafkaConf</span> <span class="token operator">=</span> <span class="token variable">$config</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;kafka&apos;</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token variable">$conf</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">RdKafka<span class="token punctuation">\</span>Conf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">// &#x5F53;&#x6709;&#x65B0;&#x7684;&#x6D88;&#x8D39;&#x8FDB;&#x7A0B;&#x52A0;&#x5165;&#x6216;&#x8005;&#x9000;&#x51FA;&#x6D88;&#x8D39;&#x7EC4;&#x65F6;&#xFF0C;kafka &#x4F1A;&#x81EA;&#x52A8;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x5206;&#x533A;&#x7ED9;&#x6D88;&#x8D39;&#x8005;&#x8FDB;&#x7A0B;&#xFF0C;&#x8FD9;&#x91CC;&#x6CE8;&#x518C;&#x4E86;&#x4E00;&#x4E2A;&#x56DE;&#x8C03;&#x51FD;&#x6570;&#xFF0C;&#x5F53;&#x5206;&#x533A;&#x88AB;&#x91CD;&#x65B0;&#x5206;&#x914D;&#x65F6;&#x89E6;&#x53D1;</span>
+<span class="token variable">$conf</span><span class="token operator">-&gt;</span><span class="token function">setRebalanceCb</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token class-name class-name-fully-qualified type-declaration">RdKafka<span class="token punctuation">\</span>KafkaConsumer</span> <span class="token variable">$kafka</span><span class="token punctuation">,</span> <span class="token variable">$err</span><span class="token punctuation">,</span> <span class="token keyword type-hint">array</span> <span class="token variable">$partitions</span> <span class="token operator">=</span> <span class="token constant">null</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token variable">$err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">case</span> <span class="token constant">RD_KAFKA_RESP_ERR__ASSIGN_PARTITIONS</span><span class="token punctuation">:</span>
+            <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;log:kafkaRebalance&apos;</span><span class="token punctuation">,</span><span class="token string double-quoted-string">&quot;Assign&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token variable">$kafka</span><span class="token operator">-&gt;</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token variable">$partitions</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token keyword">case</span> <span class="token constant">RD_KAFKA_RESP_ERR__REVOKE_PARTITIONS</span><span class="token punctuation">:</span>
+            <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;log:kafkaRebalance&apos;</span><span class="token punctuation">,</span><span class="token string double-quoted-string">&quot;Revoke&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token variable">$kafka</span><span class="token operator">-&gt;</span><span class="token function">assign</span><span class="token punctuation">(</span><span class="token constant">NULL</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+            <span class="token keyword">break</span><span class="token punctuation">;</span>
+
+        <span class="token keyword">default</span><span class="token punctuation">:</span>
+            <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>Exception</span><span class="token punctuation">(</span><span class="token variable">$err</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$conf</span><span class="token operator">-&gt;</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;group.id&apos;</span><span class="token punctuation">,</span> <span class="token variable">$kafkaConf</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;group.id&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x914D;&#x7F6E;groud.id &#x5177;&#x6709;&#x76F8;&#x540C; group.id &#x7684;consumer &#x5C06;&#x4F1A;&#x5904;&#x7406;&#x4E0D;&#x540C;&#x5206;&#x533A;&#x7684;&#x6D88;&#x606F;&#xFF0C;&#x6240;&#x4EE5;&#x540C;&#x4E00;&#x4E2A;&#x7EC4;&#x5185;&#x7684;&#x6D88;&#x8D39;&#x8005;&#x6570;&#x91CF;&#x5982;&#x679C;&#x8BA2;&#x9605;&#x4E86;&#x4E00;&#x4E2A;topic&#xFF0C; &#x90A3;&#x4E48;&#x6D88;&#x8D39;&#x8005;&#x8FDB;&#x7A0B;&#x7684;&#x6570;&#x91CF;&#x591A;&#x4E8E;&#x8FD9;&#x4E2A;topic &#x5206;&#x533A;&#x7684;&#x6570;&#x91CF;&#x662F;&#x6CA1;&#x6709;&#x610F;&#x4E49;&#x7684;&#x3002;</span>
+<span class="token variable">$conf</span><span class="token operator">-&gt;</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;metadata.broker.list&apos;</span><span class="token punctuation">,</span> <span class="token variable">$kafkaConf</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;metadata.broker.list&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x6DFB;&#x52A0; kafka&#x96C6;&#x7FA4;&#x670D;&#x52A1;&#x5668;&#x5730;&#x5740;</span>
+<span class="token variable">$topicConf</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">RdKafka<span class="token punctuation">\</span>TopicConf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$topicConf</span><span class="token operator">-&gt;</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;auto.offset.reset&apos;</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;smallest&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x5F53;&#x6CA1;&#x6709;&#x521D;&#x59CB;&#x504F;&#x79FB;&#x91CF;&#x65F6;&#xFF0C;&#x4ECE;&#x54EA;&#x91CC;&#x5F00;&#x59CB;&#x8BFB;&#x53D6;</span>
+<span class="token variable">$conf</span><span class="token operator">-&gt;</span><span class="token function">setDefaultTopicConf</span><span class="token punctuation">(</span><span class="token variable">$topicConf</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// Set the configuration to use for subscribed/assigned topics</span>
+<span class="token variable">$consumer</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">RdKafka<span class="token punctuation">\</span>KafkaConsumer</span><span class="token punctuation">(</span><span class="token variable">$conf</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$consumer</span><span class="token operator">-&gt;</span><span class="token function">subscribe</span><span class="token punctuation">(</span><span class="token punctuation">[</span><span class="token string single-quoted-string">&apos;click_log_1&apos;</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">// &#x8BA9;&#x6D88;&#x8D39;&#x8005;&#x8BA2;&#x9605;log &#x4E3B;&#x9898;&#xFF0C;&#x81EA;&#x52A8;&#x5206;&#x914D;partitions</span>
+
+
+<span class="token keyword">while</span> <span class="token punctuation">(</span><span class="token constant boolean">true</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token variable">$msg_kfk</span> <span class="token operator">=</span> <span class="token variable">$consumer</span><span class="token operator">-&gt;</span><span class="token function">consume</span><span class="token punctuation">(</span><span class="token number">2000</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token operator">/</span>&#x8BBE;&#x7F6E;<span class="token number">2</span>s&#x4E3A;&#x8D85;&#x65F6;
+        <span class="token keyword">switch</span> <span class="token punctuation">(</span><span class="token variable">$msg_kfk</span><span class="token operator">-&gt;</span><span class="token property">err</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+            <span class="token keyword">case</span> <span class="token constant">RD_KAFKA_RESP_ERR_NO_ERROR</span><span class="token punctuation">:</span>
+                <span class="token comment">// &#x8BFB;&#x53D6;kafka&#x4E2D;&#x6570;&#x636E;</span>
+                <span class="token variable">$message</span> <span class="token operator">=</span> <span class="token function">json_decode</span><span class="token punctuation">(</span><span class="token variable">$msg_kfk</span><span class="token operator">-&gt;</span><span class="token property">payload</span><span class="token punctuation">,</span> <span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">// &#x6536;&#x5230;&#x6D88;&#x606F;&#xFF0C;&#x8FDB;&#x884C;&#x5904;&#x7406;@TODO</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token constant">RD_KAFKA_RESP_ERR__PARTITION_EOF</span><span class="token punctuation">:</span>
+                <span class="token variable">$canExecuteSql</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+                <span class="token comment">//var_dump(&apos;log:kafka&apos;,&quot;No more messages; will wait for more&quot;);</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">case</span> <span class="token constant">RD_KAFKA_RESP_ERR__TIMED_OUT</span><span class="token punctuation">:</span>
+                <span class="token variable">$canExecuteSql</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+                <span class="token comment">//var_dump(&apos;log:kafka&apos;,&quot;Timed out &quot;.json_encode($hold_msg));</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+            <span class="token keyword">default</span><span class="token punctuation">:</span>
+                <span class="token variable">$canExecuteSql</span> <span class="token operator">=</span> <span class="token constant boolean">true</span><span class="token punctuation">;</span>
+                <span class="token variable">$restartNumber</span> <span class="token operator">=</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">;</span>
+                <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;log:kafkaDefaultException&apos;</span><span class="token punctuation">,</span><span class="token string single-quoted-string">&apos;errstr[&apos;</span><span class="token operator">.</span><span class="token variable">$msg_kfk</span><span class="token operator">-&gt;</span><span class="token function">errstr</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">.</span><span class="token string single-quoted-string">&apos;],errcode[&apos;</span><span class="token operator">.</span><span class="token variable">$msg_kfk</span><span class="token operator">-&gt;</span><span class="token property">err</span><span class="token operator">.</span><span class="token string single-quoted-string">&apos;]&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                <span class="token keyword">break</span><span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="php&#x751F;&#x4EA7;&#x8005;"><a name="php&#x751F;&#x4EA7;&#x8005;" class="anchor-navigation-ex-anchor" href="#php&#x751F;&#x4EA7;&#x8005;"><i class="fa fa-link" aria-hidden="true"></i></a>PHP&#x751F;&#x4EA7;&#x8005;</h1>
+<h2 id="rdkafke"><a name="rdkafke" class="anchor-navigation-ex-anchor" href="#rdkafke"><i class="fa fa-link" aria-hidden="true"></i></a>rdkafke</h2>
+<blockquote>
+<p><a href="https://github.com/edenhill/librdkafka" target="_blank">https://github.com/edenhill/librdkafka</a></p>
+<p><a href="https://github.com/arnaud-lb/php-rdkafka" target="_blank">https://github.com/arnaud-lb/php-rdkafka</a></p>
+</blockquote>
+<pre class="language-"><code class="lang-php"><span class="token variable">$conf</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">RdKafka<span class="token punctuation">\</span>Conf</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$conf</span><span class="token operator">-&gt;</span><span class="token function">set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;metadata.broker.list&apos;</span><span class="token punctuation">,</span> <span class="token string single-quoted-string">&apos;192.168.1.160:9093&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">//If you need to produce exactly once and want to keep the original produce order, uncomment the line below</span>
+<span class="token comment">//$conf-&gt;set(&apos;enable.idempotence&apos;, &apos;true&apos;);</span>
+<span class="token variable">$producer</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified">RdKafka<span class="token punctuation">\</span>Producer</span><span class="token punctuation">(</span><span class="token variable">$conf</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token variable">$topic</span> <span class="token operator">=</span> <span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">newTopic</span><span class="token punctuation">(</span><span class="token string double-quoted-string">&quot;click_log&quot;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$i</span> <span class="token operator">&lt;</span> <span class="token number">100</span><span class="token punctuation">;</span> <span class="token variable">$i</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$topic</span><span class="token operator">-&gt;</span><span class="token function">produce</span><span class="token punctuation">(</span><span class="token constant">RD_KAFKA_PARTITION_UA</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token string double-quoted-string">&quot;bean-Message <span class="token interpolation"><span class="token variable">$i</span></span>&quot;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">poll</span><span class="token punctuation">(</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$flushRetries</span> <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">;</span> <span class="token variable">$flushRetries</span> <span class="token operator">&lt;</span> <span class="token number">10</span><span class="token punctuation">;</span> <span class="token variable">$flushRetries</span><span class="token operator">++</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token variable">$result</span> <span class="token operator">=</span> <span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">flush</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">RD_KAFKA_RESP_ERR_NO_ERROR</span> <span class="token operator">===</span> <span class="token variable">$result</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">break</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token constant">RD_KAFKA_RESP_ERR_NO_ERROR</span> <span class="token operator">!==</span> <span class="token variable">$result</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">throw</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>RuntimeException</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;Was unable to flush, messages might be lost!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="nmredkafka-php"><a name="nmredkafka-php" class="anchor-navigation-ex-anchor" href="#nmredkafka-php"><i class="fa fa-link" aria-hidden="true"></i></a><a href="https://packagist.org/packages/nmred/" target="_blank">nmred/</a>kafka-php</h2>
+<blockquote>
+<p><a href="https://packagist.org/packages/nmred/kafka-php" target="_blank">https://packagist.org/packages/nmred/kafka-php</a></p>
+<p><a href="https://github.com/weiboad/kafka-php" target="_blank">https://github.com/weiboad/kafka-php</a></p>
+<p>$ composer require nmred/kafka-php</p>
+</blockquote>
+<pre class="language-"><code class="lang-php"><span class="token keyword">require</span> <span class="token string single-quoted-string">&apos;../vendor/autoload.php&apos;</span><span class="token punctuation">;</span>
+<span class="token function">date_default_timezone_set</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;PRC&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">for</span> <span class="token punctuation">(</span><span class="token variable">$i</span><span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">&gt;</span><span class="token number">0</span><span class="token punctuation">;</span><span class="token variable">$i</span><span class="token operator">--</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+    <span class="token variable">$config</span> <span class="token operator">=</span> <span class="token class-name class-name-fully-qualified static-context"><span class="token punctuation">\</span>Kafka<span class="token punctuation">\</span>ProducerConfig</span><span class="token operator">::</span><span class="token function">getInstance</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setMetadataRefreshIntervalMs</span><span class="token punctuation">(</span><span class="token number">10000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setMetadataBrokerList</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;192.168.1.160:9093&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setBrokerVersion</span><span class="token punctuation">(</span><span class="token string single-quoted-string">&apos;2.8.0&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//&#x8981;&#x67E5;&#x670D;&#x52A1;&#x5668;&#x5B89;&#x88C5;&#x7684;&#x662F;&#x5565;&#x7248;&#x672C;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setRequiredAck</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setIsAsyn</span><span class="token punctuation">(</span><span class="token constant boolean">false</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span class="token comment">//true&#x7684;&#x65F6;&#x5019;&#x4E00;&#x76F4;&#x53D1;&#x7B2C;&#x4E00;&#x6761;</span>
+    <span class="token variable">$config</span><span class="token operator">-&gt;</span><span class="token function">setProduceInterval</span><span class="token punctuation">(</span><span class="token number">500</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token variable">$array</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">//for ($i=100;$i&gt;0;$i--) {</span>
+        <span class="token variable">$array</span><span class="token punctuation">[</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>
+            <span class="token string single-quoted-string">&apos;topic&apos;</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">&apos;click_log&apos;</span><span class="token punctuation">,</span>
+            <span class="token string single-quoted-string">&apos;value&apos;</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">&apos;beantest....message-.&apos;</span> <span class="token operator">.</span> <span class="token variable">$i</span><span class="token punctuation">,</span>
+            <span class="token string single-quoted-string">&apos;key&apos;</span> <span class="token operator">=&gt;</span> <span class="token string single-quoted-string">&apos;testkey&apos;</span>
+        <span class="token punctuation">]</span><span class="token punctuation">;</span>
+    <span class="token comment">//}</span>
+
+    <span class="token variable">$producer</span> <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name class-name-fully-qualified"><span class="token punctuation">\</span>Kafka<span class="token punctuation">\</span>Producer</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token keyword">use</span> <span class="token punctuation">(</span><span class="token variable">$array</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token keyword">return</span> <span class="token variable">$array</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">success</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$result</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">error</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token variable">$errorCode</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+        <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$errorCode</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token function">var_dump</span><span class="token punctuation">(</span><span class="token variable">$producer</span><span class="token operator">-&gt;</span><span class="token function">send</span><span class="token punctuation">(</span><span class="token constant boolean">true</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="数据清理.html" class="navigation navigation-prev " aria-label="Previous page: 数据清理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="其他.html" class="navigation navigation-next " aria-label="Next page: 其他">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"PHP生产者和消费者","level":"1.4.3","depth":2,"next":{"title":"其他","level":"1.4.4","depth":2,"path":"kafka/其他.md","ref":"kafka/其他.md","articles":[]},"previous":{"title":"数据清理","level":"1.4.2","depth":2,"path":"kafka/数据清理.md","ref":"kafka/数据清理.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","-sharing","-default-theme","search-pro","splitter","expandable-chapters","hide-element","-highlight","prism","prism-themes","code","ancre-navigation","livereload"],"root":".","styles":{"website":"styles/website.css","ebook":"styles/ebook.css","pdf":"styles/pdf.css","mobi":"styles/mobi.css","epub":"styles/epub.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prism-themes/themes/prism-darcula.css"]},"livereload":{},"splitter":{},"search-pro":{},"code":{"copyButtons":true},"hide-element":{"elements":[".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"sectionx":{"tag":"b"},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"prism-themes":{},"ancre-navigation":{"associatedWithSummary":true,"float":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showLevel":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"dbhuang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"DBhuang的技术日志","language":"zh-hans","output.name":"site","gitbook":"3.2.3","description":"一点点的积累"},"file":{"path":"kafka/PHP生产者和消费者.md","mtime":"2022-04-30T11:58:59.604Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-04-30T13:59:30.513Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
